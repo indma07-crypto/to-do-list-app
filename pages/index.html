@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agenda Harian</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+<div class="app">
+
+  <div class="header">
+    <div class="avatar">An</div>
+    <div class="who">
+      <div class="name">Anonymus</div>
+      <div class="role">Student Hari Senin</div>
+    </div>
+    <div class="when">
+      <div class="date" id="dateNow">-</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Tugas baru</h2>
+    <textarea id="taskInput" placeholder="Tulis agenda yang perlu dikerjakan..."></textarea>
+    <div class="priority-row">
+      <button class="pbtn" data-level="low">Low</button>
+      <button class="pbtn active" data-level="medium">Medium</button>
+      <button class="pbtn" data-level="high">High</button>
+    </div>
+    <button class="submit" id="submitBtn">Tambah ke To Do</button>
+  </div>
+
+  <div class="section-title"><span>To Do</span><span class="count" id="todoCount">0 tugas</span></div>
+  <div id="todoList"></div>
+
+  <div class="section-title"><span>Done</span><span class="count" id="doneCount">0 selesai</span></div>
+  <div id="doneList"></div>
+
+  <button class="deleteall" id="deleteAllBtn">Hapus Semua To Do</button>
+</div>
+
+<script src="../utils/index.js"></script>
+</body>
+</html>
